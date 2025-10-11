@@ -276,153 +276,19 @@
                     Feel free to contact me for any inquiries.
                 </h1>
             </div>
-        </div>
-        <div id="contact-form-content">
-            <div class="font-calibri-spaced text-white">
-                <div class="container mt-5 px-1 pt-1">
-                    <div class="row">
-                        <!--
-                        <div class="col-md-9 pb-5">
-                            <form class="myform" id ="contact-form" name="contact-form" action="script/mail.php" method="POST">
-                                <div class="row mb-2">
-                                    <div class="col-md-6">
-                                        <div class="md-form mb-0">
-                                            <input type="text" id="userName" name="userName" class="form-control" required>
-                                            <label for="userName" class="">Your name *</label>
-                                            <span id="name-error" class="text-danger"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="md-form mb-0">
-                                            <input type="email" id="userEmail" name="userEmail" class="form-control" required>
-                                            <label id="email-label" for="userEmail" class="">Your email *</label>
-                                            <span id="email-error" class="text-danger"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mb-2">
-                                    <div class="md-form mb-0">
-                                        <input type="text" id="userSubject" name="userSubject" class="form-control" required>
-                                        <label for="userSubject" class="">Subject *</label>
-                                        <span id="subject-error" class="text-danger"></span>
-                                    </div>
-                                </div>
-                                <div class="row mb-2">
-                                    <div class="md-form mb-0">
-                                        <textarea type="text" id="userMessage" name="userMessage" rows="2"
-                                            class="form-control md-textarea" required></textarea>
-                                        <label for="userMessage">Your message *</label>
-                                        <span id="message-error" class="text-danger"></span>
-                                    </div>
-                                </div>
-                            </form>
-                            <div class="text-left text-md-left">
-                                <button class="btn btn-primary" id="submit"
-                                    onclick="document.getElementById('contact-form').submit();">Send</button>
-                                    <span id="button-msg" class="text-white"></span>
-                            </div>
-                        </div>
-                        -->
-                        <div class="col-md-3 pb-5">
-                            <ul class="list-unstyled mb-0">
-                                <li><i class="fas text-center text-white fa-envelope mt-4 fa-2x"></i>
-                                <span class="material-symbols-outlined">
-                                        mail
-                                    </span>
-                                    <address>ugohenriquez25@gmail.com</address>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-3 pb-5">
+                <ul class="list-unstyled mb-0">
+                    <li><i class="fas text-white fa-envelope mt-4 fa-2x"></i>
+                    <span class="material-symbols-outlined">
+                            mail
+                        </span>
+                        <address>ugohenriquez25@gmail.com</address>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <!--
-    <script type="text/javascript">
-        
-    var emailField = document.getElementById("userEmail");  
-    var emailError = document.getElementById("email-error");   
-
-    var userName = document.getElementById('userName');
-    var userError = document.getElementById('name-error');
-
-    var subjectField = document.getElementById('userSubject');
-    var subjectError = document.getElementById('subject-error');
-
-    var messageField = document.getElementById('userMessage');
-    var messageError = document.getElementById('message-error');
-
-    var okButton = document.getElementById('submit');
-    var buttonMessage = document.getElementById("button-msg");   
-
-    var nameFlag = false;
-    var emailFlag = false;
-    var subjectFlag =false;
-    var messageFlag = false;
-
-    okButton.disabled = true;
-    buttonMessage.innerHTML="";
-
-    okButton.addEventListener("click", disableClick);
-
-    emailField.addEventListener('keyup', function (event) {
-    isValidEmail = emailField.checkValidity();
-  
-    if ( isValidEmail ) {
-      emailError.innerHTML="";
-      emailFlag = true;
-    } else {
-      emailError.innerHTML="Not a valid email";
-      emailFlag = false;
-    }
-    okButton.disabled = !(nameFlag&&emailFlag&&subjectFlag&&messageFlag);
-    });
-
-    userName.addEventListener('input', evt => {  
-        if (userName.value.trim()) { 
-            userError.innerHTML="";
-            nameFlag=true;
-        } else {
-            userError.innerHTML="Please fill in";
-            nameFlag=false;
-        }
-
-        okButton.disabled = !(nameFlag&&emailFlag&&subjectFlag&&messageFlag);
-    });
-
-    subjectField.addEventListener('input', evt => {  
-        if (subjectField.value.trim()) { 
-            subjectError.innerHTML="";
-            subjectFlag=true;
-        } else {
-            subjectError.innerHTML="Please fill in";
-            subjectFlag=false;
-        }
-
-        okButton.disabled = !(nameFlag&&emailFlag&&subjectFlag&&messageFlag);
-    });
-
-    messageField.addEventListener('input', evt => {  
-        if (messageField.value.trim()) { 
-            messageError.innerHTML="";
-            messageFlag=true;
-        } else {
-            messageError.innerHTML="Please fill in";
-            messageFlag=false;
-        }
-
-        okButton.disabled = !(nameFlag&&emailFlag&&subjectFlag&&messageFlag);
-    });
-
-    function disableClick() {
-        okButton.disabled = true;
-        buttonMessage.innerHTML="sending email...";
-    }
-
-    </script>
--->
 </body>
 
 </html>
